@@ -1,13 +1,31 @@
 <div class="info">
   <div class="card">
-    <iframe class="card-img-top" rel="nofollow" width="560" height="315" src="https://www.youtube.com/embed/UrU1EqiVgks"
+    <iframe class="card-img-top" rel="nofollow" width="560" height="315" [src]="videoLink | domSanitizer"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       alt="Video Montage Clip" allowfullscreen></iframe>
     <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-      </p>
+      <div class="ratings">
+        <i id="star" class="material-icons">
+          star_rate
+        </i>
+        <span class="h6">4/5</span>
+      </div>
+
+      <div class="time">
+        <i id="schedule" class="material-icons">
+          schedule
+        </i>
+        <span class="h6 text-muted">Hace 5 minutos.</span>
+      </div>
+
+      <div class="author">
+        <i id="people" class="material-icons">
+          account_circle
+        </i>
+        <span class="h6">Anthony A.</span>
+      </div>
+
     </div>
   </div>
 </div>

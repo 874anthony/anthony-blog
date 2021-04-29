@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 // Modules to share
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [HeaderComponent],
-  imports: [CommonModule],
-  exports: [HeaderComponent],
+  declarations: [HeaderComponent, FooterComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [HeaderComponent, FooterComponent],
 })
 export class SharedModule {}
