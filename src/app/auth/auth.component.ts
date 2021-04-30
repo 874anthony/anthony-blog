@@ -11,7 +11,6 @@ export class AuthComponent implements OnInit {
 
   constructor(private spinnerService: SpinnerService) {
     this.isLoading = this.spinnerService.isLoading();
-    console.log(this.isLoading);
 
     setTimeout(() => {
       this.isLoading = this.spinnerService.isNotLoading();
