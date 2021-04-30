@@ -22,6 +22,11 @@
             <i class="material-icons">how_to_reg</i> Sign In
           </a>
         </li>
+        <li *ngIf="!isInAboutPage" class="nav-item">
+          <a routerLink="/about-me" class="nav-link">
+            <i class="material-icons">account_box</i> About me
+          </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/874anthony"
             target="_blank" data-original-title="Sígueme en Twitter" rel="nofollow">

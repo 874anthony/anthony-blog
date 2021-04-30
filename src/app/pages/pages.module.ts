@@ -8,9 +8,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 // Modules
 import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [LandingPageComponent],
+  declarations: [LandingPageComponent, AboutComponent],
   imports: [CommonModule, SharedModule, ComponentsModule, RouterModule],
   exports: [],
 })

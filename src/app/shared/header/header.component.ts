@@ -11,12 +11,19 @@ import { AuthService } from '../../services/auth.service';
 export class HeaderComponent {
   // Flag variable
   isInLoginPage: Boolean = false;
+  isInAboutPage: Boolean = false;
 
   constructor(private authService: AuthService, private router: Router) {
     // Here it's to make sure we are in login listening to Activated Route
     this.authService.isLoggedIn().subscribe((data) => {
-      if (data === 'login') {
-        this.isInLoginPage = true;
+      switch (data) {
+        case 'login':
+          this.isInLoginPage = true;
+          break;
+
+        case 'about-me':
+          this.isInAboutPage = true;
+          break;
       }
     });
   }
@@ -32,7 +39,7 @@ export class HeaderComponent {
 
   navbarBrandToggle() {
     // This method what it does its to navigate back to landing page in case you're in the Login Page.
-    if (this.isInLoginPage) {
+    if (this.isInLoginPage || this.isInAboutPage) {
       this.router.navigateByUrl('/');
     } else {
       this.scrollToTop();

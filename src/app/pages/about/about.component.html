@@ -1,0 +1,110 @@
+<body class="profile-page sidebar-collapse">
+
+  <app-spinner *ngIf="isLoading"></app-spinner>
+
+  <app-header></app-header>
+
+  <div class="page-header header-filter" data-parallax="true"
+    style="background-image: url('../../../assets/img/basketball-bg.jpg');"></div>
+
+  <div class="main main-raised">
+    <div class="profile-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <div class="profile">
+              <div class="avatar">
+                <img src="../../../assets/img/faces/me-anthony.jpg" alt="Circle Image"
+                  class="img-raised rounded-circle img-fluid">
+              </div>
+              <div class="name">
+                <h3 class="title">Anthony Acosta</h3>
+                <h6>FullStack Developer Junior</h6>
+                <a href="https://twitter.com/874anthony" target="_blank" class="btn btn-just-icon btn-link"><i
+                    class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/MichaelJackson4Evah/" target="_blank"
+                  class="btn btn-just-icon btn-link"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/874anthonyy/" target="_blank" class="btn btn-just-icon btn-link"><i
+                    class="fa fa-instagram"></i></a>
+                <a href="https://github.com/874anthony" target="_blank" class="btn btn-just-icon btn-link"><i
+                    class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anthony-acosta-25b2241aa/" target="_blank"
+                  class="btn btn-just-icon btn-link"><i class="fa fa-linkedin-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="description text-center">
+          <p>Born in Colombia, raised between the parks near to my house, I learnt how to play basketball. Since then, I
+            became truly pasionated for this sport, started playing in my high school, and keep training everyday.
+            I love web development. This page it's just a sample to prove you what can I do. All buttons here are for
+            demostration purpose only. Enjoy it. If you want to, contact me in my social media pages. </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <div class="profile-tabs">
+              <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#basketball" role="tab" data-toggle="tab">
+                    <i class="material-icons">sports_basketball</i> Basketball
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#music" role="tab" data-toggle="tab">
+                    <i class="material-icons">play_circle_filled</i> Music
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#favorite" role="tab" data-toggle="tab">
+                    <i class="material-icons">favorite</i> Favorite
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content tab-space">
+          <div class="tab-pane active text-center gallery" id="basketball">
+            <div class="row">
+              <div class="col-md-3 ml-auto">
+                <img src="../../../assets/img/examples/basketball-1.jpg" class="rounded">
+                <img src="../../../assets/img/examples/basketball-2.jpg" class="rounded">
+              </div>
+              <div class="col-md-3 mr-auto">
+                <img src="../../../assets/img/examples/basketball-3.jpg" class="rounded">
+                <img src="../../../assets/img/examples/basketball-4.jpg" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane text-center gallery" id="music">
+            <div class="row">
+              <div class="col-md-3 ml-auto">
+                <img src="../../../assets/img/examples/music-2.jpg" class="rounded">
+                <img src="../../../assets/img/examples/music-3.jpg" class="rounded">
+                <img src="../../../assets/img/examples/music-4.jpg" class="rounded">
+              </div>
+              <div class="col-md-3 mr-auto">
+                <img src="../../../assets/img/examples/music-6.jpg" class="rounded">
+                <img src="../../../assets/img/examples/music-7.jpg" class="rounded">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane text-center gallery" id="favorite">
+            <div class="row">
+              <div class="col-md-3 ml-auto">
+                <img src="../../../assets/img/examples/music-6.jpg" class="rounded">
+                <img src="../../../assets/img/examples/basketball-1.jpg" class="rounded">
+              </div>
+              <div class="col-md-3 mr-auto">
+                <img src="../../../assets/img/examples/basketball-3.jpg" class="rounded">
+                <img src="../../../assets/img/examples/music-7.jpg" class="rounded">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</body>
