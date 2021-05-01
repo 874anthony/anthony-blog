@@ -7,9 +7,11 @@ import { SpinnerService } from '../services/spinner.service';
   styleUrls: ['./auth.component.scss'],
 })
 export class AuthComponent implements OnInit {
+  // Loading flag
   isLoading: Boolean = false;
 
   constructor(private spinnerService: SpinnerService) {
+    // Adding a loading manually. After 2 seconds it will disappear
     this.isLoading = this.spinnerService.isLoading();
 
     setTimeout(() => {

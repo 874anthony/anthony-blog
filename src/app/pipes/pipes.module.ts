@@ -1,7 +1,8 @@
+// In-built modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// Pipes
+// Pipes exported
 import { DomSanitizerPipe } from './dom-sanitizer.pipe';
 
 @NgModule({

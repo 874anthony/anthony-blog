@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./video-card.component.scss'],
 })
 export class VideoCardComponent implements OnInit {
+  // Variables coming from the parent component
   @Input() videoLink: string = '';
 
   constructor() {}

@@ -1,12 +1,16 @@
+// In-built modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+// Components
 import { AppComponent } from './app.component';
 
-// Modules
+// Modules imported
 import { PagesModule } from './pages/pages.module';
 import { AuthModule } from './auth/auth.module';
+
+// Routing modules imported
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],

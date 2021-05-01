@@ -1,6 +1,8 @@
 <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100"
   id="sectionsNav">
   <div class="container">
+
+    <!-- Navbar brands starts here -->
     <div class="navbar-translate">
       <a class="navbar-brand" (click)="navbarBrandToggle()">
         Anthony's Blog </a>
@@ -13,8 +15,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
+    <!-- Navbar brand ends here -->
+
+    <!-- Social media starts here -->
     <div class="collapse navbar-collapse">
-      <!-- Redes sociales -->
       <ul class="navbar-nav ml-auto">
 
         <li *ngIf="!isInLoginPage" class="nav-item">
@@ -62,5 +66,6 @@
         </li>
       </ul>
     </div>
+    <!-- Social media ends here -->
   </div>
 </nav>

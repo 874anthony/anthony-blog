@@ -1,9 +1,12 @@
 <body class="profile-page sidebar-collapse">
 
+  <!-- Spinner checking the flag variable -->
   <app-spinner *ngIf="isLoading"></app-spinner>
 
+  <!-- Adding the header -->
   <app-header></app-header>
 
+  <!-- The rest of the page -->
   <div class="page-header header-filter" data-parallax="true"
     style="background-image: url('../../../assets/img/basketball-bg.jpg');"></div>
 
@@ -17,6 +20,7 @@
                 <img src="../../../assets/img/faces/me-anthony.jpg" alt="Circle Image"
                   class="img-raised rounded-circle img-fluid">
               </div>
+              <!-- Name and social media links starts here -->
               <div class="name">
                 <h3 class="title">Anthony Acosta</h3>
                 <h6>FullStack Developer Junior</h6>
@@ -34,12 +38,17 @@
             </div>
           </div>
         </div>
+        <!-- Name and social media links ends here -->
+        <!-- Description Starts here -->
         <div class="description text-center">
           <p>Born in Colombia, raised between the parks near to my house, I learnt how to play basketball. Since then, I
             became truly pasionated for this sport, started playing in my high school, and keep training everyday.
             I love web development. This page it's just a sample to prove you what can I do. All buttons here are for
             demostration purpose only. Enjoy it. If you want to, contact me in my social media pages. </p>
         </div>
+        <!-- Description ends here -->
+
+        <!-- Navigation icons starts here -->
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile-tabs">
@@ -63,6 +72,9 @@
             </div>
           </div>
         </div>
+        <!-- Navigation icons Ends here -->
+
+        <!-- Photos from basketball, using ID as reference -->
         <div class="tab-content tab-space">
           <div class="tab-pane active text-center gallery" id="basketball">
             <div class="row">
@@ -76,6 +88,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Photos from music, using ID as reference -->
           <div class="tab-pane text-center gallery" id="music">
             <div class="row">
               <div class="col-md-3 ml-auto">
@@ -89,6 +103,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Photos from favorites, using ID as reference -->
           <div class="tab-pane text-center gallery" id="favorite">
             <div class="row">
               <div class="col-md-3 ml-auto">
@@ -106,5 +122,6 @@
     </div>
   </div>
 
+  <!-- Adding the footer -->
   <app-footer></app-footer>
 </body>

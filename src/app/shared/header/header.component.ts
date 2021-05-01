@@ -1,3 +1,4 @@
+// In-built imports
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,12 +10,14 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  // Flag variable
+  // Flags variables
   isInLoginPage: Boolean = false;
   isInAboutPage: Boolean = false;
 
   constructor(private authService: AuthService, private router: Router) {
-    // Here it's to make sure we are in login listening to Activated Route
+    /* Here it subscribes to the observable returned from the AuthService, and evaluate the data
+    that is coming.*/
+
     this.authService.isLoggedIn().subscribe((data) => {
       switch (data) {
         case 'login':
@@ -38,7 +41,7 @@ export class HeaderComponent {
   }
 
   navbarBrandToggle() {
-    // This method what it does its to navigate back to landing page in case you're in the Login Page.
+    // This method what it does its to navigate back to landing page in case you're in the other view.
     if (this.isInLoginPage || this.isInAboutPage) {
       this.router.navigateByUrl('/');
     } else {

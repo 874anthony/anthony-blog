@@ -1,5 +1,7 @@
+<!-- Code for a single video card. -->
 <div class="info">
   <div class="card">
+    <!-- Use of DomSanitizer to properly pass the YouTube Link, using custom pipe. -->
     <iframe class="card-img-top" rel="nofollow" width="560" height="315" [src]="videoLink | domSanitizer"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

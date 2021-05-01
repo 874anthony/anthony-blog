@@ -1,7 +1,8 @@
-import { EventEmitter, Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+// Built-in modules
+import { Injectable } from '@angular/core';
+import { Router, ActivationEnd } from '@angular/router';
 
-import { ActivationEnd } from '@angular/router';
+// Rxjs extensions to manipulate the data
 import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 
@@ -11,7 +12,9 @@ import { filter, map } from 'rxjs/operators';
 export class AuthService {
   constructor(private router: Router) {}
 
-  // This method it's to check de /login params and filtering those events
+  /* This method it's to check the params based on the current route and filter the events
+  that are emitted. Returns an Observable that we can subscribe. */
+
   isLoggedIn(): Observable<any> {
     return this.router.events.pipe(
       filter((event): event is ActivationEnd => event instanceof ActivationEnd),
