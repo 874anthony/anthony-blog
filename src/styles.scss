@@ -12,54 +12,54 @@
 
 
 /* Adding al the global styles. Importing SASS files. */
-@import "./assets/material-kit/variables";
-@import "./assets/material-kit/mixins";
-@import "./assets/material-kit/core-bootstrap";
-@import "./assets/material-kit/reboot";
+@import "assets/material-kit/variables";
+@import "assets/material-kit/mixins";
+@import "assets/material-kit/core-bootstrap";
+@import "assets/material-kit/reboot";
 
 // Core Components
-@import "./assets/material-kit/layout";
-@import "./assets/material-kit/buttons";
-@import "./assets/material-kit/misc";
-@import "./assets/material-kit/checkboxes";
-@import "./assets/material-kit/custom-forms";
-@import "./assets/material-kit/switches";
-@import "./assets/material-kit/radios";
-// @import "./assets/material-kit/carousel";
-@import "./assets/material-kit/forms";
-@import "./assets/material-kit/input-group";
-@import "./assets/material-kit/list-group";
-@import "./assets/material-kit/nav";
-@import "./assets/material-kit/images";
-@import "./assets/material-kit/navbar";
-@import "./assets/material-kit/badges";
-@import "./assets/material-kit/alerts";
-@import "./assets/material-kit/pagination";
-@import "./assets/material-kit/pills";
-@import "./assets/material-kit/info-areas";
-@import "./assets/material-kit/type";
-@import "./assets/material-kit/tabs";
-@import "./assets/material-kit/tooltip";
-@import "./assets/material-kit/popover";
-@import "./assets/material-kit/modal";
-@import "./assets/material-kit/dropdown";
-@import "./assets/material-kit/drawer";
-@import "./assets/material-kit/progress";
-@import "./assets/material-kit/togglebutton";
-@import "./assets/material-kit/ripples";
-@import "./assets/material-kit/headers";
-@import "./assets/material-kit/footers";
+@import "assets/material-kit/layout";
+@import "assets/material-kit/buttons";
+@import "assets/material-kit/misc";
+@import "assets/material-kit/checkboxes";
+@import "assets/material-kit/custom-forms";
+@import "assets/material-kit/switches";
+@import "assets/material-kit/radios";
+// @import "assets/material-kit/carousel";
+@import "assets/material-kit/forms";
+@import "assets/material-kit/input-group";
+@import "assets/material-kit/list-group";
+@import "assets/material-kit/nav";
+@import "assets/material-kit/images";
+@import "assets/material-kit/navbar";
+@import "assets/material-kit/badges";
+@import "assets/material-kit/alerts";
+@import "assets/material-kit/pagination";
+@import "assets/material-kit/pills";
+@import "assets/material-kit/info-areas";
+@import "assets/material-kit/type";
+@import "assets/material-kit/tabs";
+@import "assets/material-kit/tooltip";
+@import "assets/material-kit/popover";
+@import "assets/material-kit/modal";
+@import "assets/material-kit/dropdown";
+@import "assets/material-kit/drawer";
+@import "assets/material-kit/progress";
+@import "assets/material-kit/togglebutton";
+@import "assets/material-kit/ripples";
+@import "assets/material-kit/headers";
+@import "assets/material-kit/footers";
 
 // Cards
-@import './assets/material-kit/cards';
-// @import './assets/material-kit/cards/card-carousel';
-@import './assets/material-kit/cards/card-login';
-@import './assets/material-kit/cards/card-plain';
+@import 'assets/material-kit/cards';
+// @import 'assets/material-kit/cards/card-carousel';
+@import 'assets/material-kit/cards/card-login';
+@import 'assets/material-kit/cards/card-plain';
 
 // Core Plugins
-@import './assets/material-kit/plugins/plugin-datetime-picker';
-@import './assets/material-kit/plugins/plugin-nouislider';
+@import 'assets/material-kit/plugins/plugin-datetime-picker';
+@import 'assets/material-kit/plugins/plugin-nouislider';
 
 // Sections and Example pages
-@import "./assets/material-kit/example-pages";
-@import "./assets/material-kit/responsive";
+@import "assets/material-kit/example-pages";
+@import "assets/material-kit/responsive";
