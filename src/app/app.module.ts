@@ -1,23 +1,20 @@
+// In-built modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+// Components
 import { AppComponent } from './app.component';
 
-// Modules to share
-import { SharedModule } from './shared/shared.module';
+// Modules imported
 import { PagesModule } from './pages/pages.module';
-import { ComponentsModule } from './components/components.module';
+import { AuthModule } from './auth/auth.module';
+
+// Routing modules imported
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    PagesModule,
-    ComponentsModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, PagesModule, AuthModule],
   providers: [],
   bootstrap: [AppComponent],
 })

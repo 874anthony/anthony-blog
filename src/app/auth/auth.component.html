@@ -1,0 +1,71 @@
+ <!-- Spinner checking the flag variable -->
+ <app-spinner *ngIf="isLoading"></app-spinner>
+
+ <body class="login-page sidebar-collapse">
+
+   <!-- Adding the header -->
+   <app-header></app-header>
+
+   <!-- Login Page - Do not remove. -->
+   <div class="page-header header-filter"
+     style="background-image: url('../../assets/img/login-bg.jpg'); background-size: cover; background-position: top center;">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+           <div class="card card-login">
+             <form class="form" method="" action="">
+               <!-- Social media starts here -->
+               <div class="card-header card-header-dark text-center">
+                 <h4 class="card-title">Login</h4>
+                 <div class="social-line">
+                   <a target="_blank" href="https://www.facebook.com/" class="btn btn-just-icon btn-link">
+                     <i class="fa fa-facebook-square"></i>
+                   </a>
+                   <a target="_blank" href="https://twitter.com/" class="btn btn-just-icon btn-link">
+                     <i class="fa fa-twitter"></i>
+                   </a>
+                   <a target="_blank" href="https://www.google.com/" class="btn btn-just-icon btn-link">
+                     <i class="fa fa-google-plus"></i>
+                   </a>
+                 </div>
+               </div>
+               <!-- Social media ends here -->
+               <p class="description text-center">Or start typing here...</p>
+               <div class="card-body">
+                 <div class="input-group">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text">
+                       <i class="material-icons">face</i>
+                     </span>
+                   </div>
+                   <input type="text" class="form-control" placeholder="First Name...">
+                 </div>
+                 <div class="input-group">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text">
+                       <i class="material-icons">mail</i>
+                     </span>
+                   </div>
+                   <input type="email" class="form-control" placeholder="Email...">
+                 </div>
+                 <div class="input-group">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text">
+                       <i class="material-icons">lock_outline</i>
+                     </span>
+                   </div>
+                   <input type="password" class="form-control" placeholder="Password...">
+                 </div>
+               </div>
+               <div class="footer text-center">
+                 <button disabled class="btn btn-dark btn-link btn-wd btn-lg">Get Started - Disabled</button>
+               </div>
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Adding Footer -->
+   <app-footer></app-footer>
+ </body>
